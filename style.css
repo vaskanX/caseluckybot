@@ -1,1 +1,26 @@
-/* Стили для адаптивности и дизайна под iPhone */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 20px;
+}
+.case-box {
+    background: #333;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+img {
+    max-width: 100px;
+}

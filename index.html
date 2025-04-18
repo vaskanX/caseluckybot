@@ -1,1 +1,21 @@
-<!-- HTML главной страницы -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Box</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lucky Box</h1>
+        <div class="case-box" onclick="openCase()">
+            <p>Покрутить за 1.5 TON</p>
+        </div>
+        <div id="animation" class="hidden">Крутится...</div>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
