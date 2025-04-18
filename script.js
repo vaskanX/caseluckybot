@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const button = document.getElementById("openButton");
+  const payButton = document.getElementById("payButton");
+  const openButton = document.getElementById("openButton");
   const animation = document.getElementById("animation");
   const result = document.getElementById("result");
 
@@ -7,7 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     Telegram.WebApp.ready();
   }
 
-  button.addEventListener("click", function () {
+  payButton.addEventListener("click", function () {
+    const tonLink = "https://tonkeeper.com/transfer/UQDyF3c6uCGHIbbLdEkj9VJeGdYZNiWOqB2UeJTivaKmOvJn?amount=1500000000";
+    window.open(tonLink, "_blank");
+    
+    // После открытия TON-ссылки показываем кнопку "Открыть кейс"
+    payButton.style.display = "none";
+    openButton.style.display = "block";
+  });
+
+  openButton.addEventListener("click", function () {
     if (animation.classList.contains("active")) return;
 
     result.textContent = "";
